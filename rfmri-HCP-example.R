@@ -4,6 +4,7 @@ rm(list=ls())
 
 ## PCA fators are saved in the following file
 load("rsfmri-example.Rdata");
+## Note that the data dimension is dim*length (5*1200) 
 
 source("dpd_VAR_library.R");
 
