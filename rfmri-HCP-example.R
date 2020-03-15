@@ -4,11 +4,12 @@ rm(list=ls())
 
 ## PCA fators are saved in the following file
 load("rsfmri-example.Rdata");
+## 5 factors are stored in the variable z.
 ## Note that the data dimension is dim*length (5*1200) 
 
 source("dpd_VAR_library.R");
 
-# Best VAR order
+# Best VAR order, p=1
 VAR.best(z, 5)$opt
 
 ## Critical value
